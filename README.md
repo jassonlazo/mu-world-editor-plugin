@@ -4,6 +4,8 @@ Plugin de Godot para cargar terrenos y objetos de MU Online como nodos editables
 
 Autor: `@jassonlazo`
 
+![Vista previa del plugin en el editor de Godot](docs/editor-preview.png)
+
 ## Funcionalidades
 
 - Carga el terreno de un mundo MU dentro del viewport 3D del editor.
