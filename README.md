@@ -6,6 +6,13 @@ Creditos: `@jassonlazo`
 
 ![Vista previa del plugin en el editor de Godot](docs/editor-preview.png)
 
+## Instalacion rapida
+
+1. Copia `addons/mu_world_editor` dentro de tu proyecto Godot.
+2. Copia tu carpeta de cliente MU como `res://Data` dentro del proyecto.
+3. Activa el plugin en `Project > Project Settings > Plugins`.
+4. Abre una escena 3D y usa el panel `MU Editor` para cargar y visualizar los archivos.
+
 ## Funcionalidades
 
 - Carga el terreno de un mundo MU dentro del viewport 3D del editor.
@@ -35,12 +42,10 @@ Archivos principales:
 
 ## Uso
 
-1. Copia la carpeta `addons/mu_world_editor` dentro de tu proyecto Godot.
-2. Copia dentro de tu proyecto una carpeta `Data` con los archivos de MU que quieras abrir.
-3. Activa el plugin desde `Project > Project Settings > Plugins`.
-4. Abre una escena 3D y usa el panel `MU Editor`.
-5. El plugin leera `res://Data/World*` y `res://Data/Object*` automaticamente.
-6. Guarda el resultado en un archivo `EncTerrain*.edited.obj`.
+1. Abre una escena 3D.
+2. Usa el panel `MU Editor`.
+3. El plugin leera `res://Data/World*` y `res://Data/Object*` automaticamente.
+4. Guarda el resultado en un archivo `EncTerrain*.edited.obj`.
 
 ## Notas
 
