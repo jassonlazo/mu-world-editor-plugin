@@ -27,6 +27,11 @@ Archivos principales:
 - `mu_world_editor.gd`
 - `mu_world_editor_dock.gd`
 - `mu_object_codec.gd`
+- `runtime/mu_terrain_runtime.gd`
+- `runtime/bmd_instance_runtime.gd`
+- `runtime/terrain_bmd_loader_runtime.gd`
+- `runtime/bmd_decryption_runtime.gd`
+- `runtime/mu_terrain.gdshader`
 
 ## Uso
 
@@ -38,6 +43,8 @@ Archivos principales:
 
 ## Notas
 
+- El addon ya incluye sus scripts runtime de terreno, BMD y shader dentro de `addons/mu_world_editor/runtime`, asi que no depende de `res://scripts` para funcionar.
+- Aun requiere las clases nativas de la GDExtension del proyecto para cargar texturas y formatos de MU (`MuObjectLoader`, `MuTerrainLoader`, `MuTextureLoader`).
 - El plugin no sobreescribe el archivo `EncTerrain*.obj` original por defecto.
 - Si falta un archivo `.bmd`, crea un placeholder para mantener el flujo de edicion.
 - Los objetos importados quedan organizados dentro del nodo `WorldObjects`.

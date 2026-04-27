@@ -25,8 +25,8 @@ const WORLD1_MAPPING := {
 	145: "Furniture06", 146: "Furniture07", 150: "Candle01", 151: "Beer01", 152: "Beer02", 153: "Beer03",
 }
 
-const TERRAIN_SCRIPT := preload("res://scripts/MuTerrain.gd")
-const BMD_INSTANCE_SCRIPT := preload("res://scripts/BMDInstance.gd")
+const TERRAIN_SCRIPT := preload("res://addons/mu_world_editor/runtime/mu_terrain_runtime.gd")
+const BMD_INSTANCE_SCRIPT := preload("res://addons/mu_world_editor/runtime/bmd_instance_runtime.gd")
 const OBJECT_CODEC_SCRIPT := preload("res://addons/mu_world_editor/mu_object_codec.gd")
 
 @export_range(1, 200, 1) var world_index: int = 95
