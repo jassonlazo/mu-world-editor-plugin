@@ -1,6 +1,8 @@
 @tool
 extends EditorPlugin
 
+const MU_WORLD_EDITOR_EXTENSION := preload("res://addons/mu_world_editor/mu_world_editor.gdextension")
+
 const MU_WORLD_EDITOR_SCRIPT := preload("res://addons/mu_world_editor/mu_world_editor.gd")
 const MU_WORLD_EDITOR_DOCK_SCRIPT := preload("res://addons/mu_world_editor/mu_world_editor_dock.gd")
 const AUTO_SCENE_NODE_NAME := "MUGameFiles"

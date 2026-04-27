@@ -36,15 +36,16 @@ Archivos principales:
 ## Uso
 
 1. Copia la carpeta `addons/mu_world_editor` dentro de tu proyecto Godot.
-2. Activa el plugin desde `Project > Project Settings > Plugins`.
-3. Agrega el nodo `MuWorldEditor` en una escena 3D.
-4. Carga el mundo y edita objetos desde el dock del plugin.
-5. Guarda el resultado en un archivo `EncTerrain*.edited.obj`.
+2. Copia dentro de tu proyecto una carpeta `Data` con los archivos de MU que quieras abrir.
+3. Activa el plugin desde `Project > Project Settings > Plugins`.
+4. Abre una escena 3D y usa el panel `MU Editor`.
+5. El plugin leera `res://Data/World*` y `res://Data/Object*` automaticamente.
+6. Guarda el resultado en un archivo `EncTerrain*.edited.obj`.
 
 ## Notas
 
-- El addon ya incluye sus scripts runtime de terreno, BMD y shader dentro de `addons/mu_world_editor/runtime`, asi que no depende de `res://scripts` para funcionar.
-- Aun requiere las clases nativas de la GDExtension del proyecto para cargar texturas y formatos de MU (`MuObjectLoader`, `MuTerrainLoader`, `MuTextureLoader`).
+- El addon incluye su `GDExtension` para Windows y sus scripts runtime dentro de `addons/mu_world_editor`, para que no dependa de `res://scripts` ni de un `bin/` externo.
+- Para usarlo, el usuario solo necesita importar su propia carpeta `Data` dentro del proyecto Godot.
 - El plugin no sobreescribe el archivo `EncTerrain*.obj` original por defecto.
 - Si falta un archivo `.bmd`, crea un placeholder para mantener el flujo de edicion.
 - Los objetos importados quedan organizados dentro del nodo `WorldObjects`.
